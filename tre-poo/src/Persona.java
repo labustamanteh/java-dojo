@@ -33,6 +33,22 @@ public class Persona {
         }
     }
 
+    public void diagnosticarIMC(int imc) {
+        switch (imc){
+            case -1:
+                System.out.println("Con bajo de peso");
+                break;
+            case 0:
+                System.out.println("Con peso saludable");
+                break;
+            case 1:
+                System.out.println("Con sobrepeso");
+                break;
+            default:
+                break;
+        }
+    }
+
     public boolean esMayorDeEdad(){
         return edad >= 18;
     }

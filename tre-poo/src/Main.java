@@ -7,20 +7,7 @@ public class Main {
         int imc = carolina.calcularIMC();
         boolean esMayor = carolina.esMayorDeEdad();
         System.out.println(carolina.printPersona());
-
-        switch (imc){
-            case -1:
-                System.out.println("Con bajo de peso");
-                break;
-            case 0:
-                System.out.println("Con peso saludable");
-                break;
-            case 1:
-                System.out.println("Con sobrepeso");
-                break;
-            default:
-                break;
-        }
+        carolina.diagnosticarIMC(imc);
 
         if (esMayor){
             System.out.println("Es mayor de edad");
